@@ -46,8 +46,8 @@ const StyledLogo = styled.div`
   a {
     display: block;
     color: ${colors.green};
-    width: 42px;
-    height: 42px;
+    width: 100px;
+    height: 100px;
     &:hover,
     &:focus {
       svg {
@@ -278,10 +278,15 @@ class Nav extends Component {
                 {isMounted &&
                   navLinks &&
                   navLinks.map(({ url, name }, i) => (
-                    <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
+                    <CSSTransition
+                      key={i}
+                      classNames={fadeDownClass}
+                      timeout={timeout}
+                    >
                       <StyledListItem
                         key={i}
-                        style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                        style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}
+                      >
                         <StyledListLink to={url}>{name}</StyledListLink>
                       </StyledListItem>
                     </CSSTransition>
@@ -292,12 +297,41 @@ class Nav extends Component {
             <TransitionGroup component={null}>
               {isMounted && (
                 <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                  <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+                  <div
+                    style={{
+                      transitionDelay: `${
+                        isHome ? navLinks.length * 100 : 0
+                      }ms`,
+                    }}
+                  >
                     <StyledResumeButton
                       href="/resume.pdf"
                       target="_blank"
-                      rel="nofollow noopener noreferrer">
-                      Resume
+                      rel="nofollow noopener noreferrer"
+                    >
+                      Software Resume
+                    </StyledResumeButton>
+                  </div>
+                </CSSTransition>
+              )}
+            </TransitionGroup>
+
+            <TransitionGroup component={null}>
+              {isMounted && (
+                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                  <div
+                    style={{
+                      transitionDelay: `${
+                        isHome ? navLinks.length * 100 : 0
+                      }ms`,
+                    }}
+                  >
+                    <StyledResumeButton
+                      href="/ProductResume.pdf"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      Product Resume
                     </StyledResumeButton>
                   </div>
                 </CSSTransition>

@@ -1,8 +1,9 @@
 ---
-title: 'Hi, my name is'
-name: 'Brittany Chiang'
-subtitle: 'I build things for the web.'
-buttonText: 'Get In Touch'
+title: "Hi, my name is"
+avatar: "../about/meBlue.jpg"
+name: "Arjun Nemani"
+subtitle: "I build and break things."
+buttonText: "Say Hello!"
 ---
 
-I'm a software engineer based in Boston, MA specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+I am a software engineer, currently studying at IIIT Hyderabad with a keen interest in building & scaling software, product management and community building

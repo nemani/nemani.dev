@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
-import sr from '@utils/sr';
-import { srConfig, github } from '@config';
-import styled from 'styled-components';
-import { theme, mixins, media, Section, Heading } from '@styles';
+import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
+import Img from "gatsby-image";
+import sr from "@utils/sr";
+import { srConfig, github } from "@config";
+import styled from "styled-components";
+import { theme, mixins, media, Section, Heading } from "@styles";
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -39,7 +39,7 @@ const Skill = styled.li`
   font-size: ${fontSizes.smish};
   color: ${colors.slate};
   &:before {
-    content: '▹';
+    content: "▹";
     position: absolute;
     left: 0;
     color: ${colors.green};
@@ -60,7 +60,7 @@ const StyledPic = styled.div`
     }
   }
 `;
-const StyledAvatar = styled(Img)`
+export const StyledAvatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
@@ -72,7 +72,7 @@ const StyledAvatarLink = styled.a`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
+  background-color: ${colors.imgAccent};
   margin-left: -20px;
   &:hover,
   &:focus {
@@ -88,7 +88,7 @@ const StyledAvatarLink = styled.a`
   }
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;

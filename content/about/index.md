@@ -1,19 +1,27 @@
 ---
-title: 'About Me'
-avatar: './me.jpg'
+title: "About Me"
+avatar: "./meRed.jpg"
 skills:
-  - JavaScript (ES6+)
-  - HTML & (S)CSS
+  - Python
+  - Bash
+  - Linux
+  - Ruby on Rails
+  - DevOps
+  - JavaScript
   - React
-  - Vue
   - Node.js
-  - WordPress
 ---
 
-Hello! I'm Brittany, a software engineer based in Boston, MA.
+Hello!
 
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+I am Arjun, a software engineer based in Hyderabad, India.
 
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+I enjoy building software that is performant and scalable.
+I like to automate processes and write code that is plesent to read.
+I am also interested in product management and community building.
+
+I am finishing up on my studies at IIIT Hyderabad, with a Masters by Research in Computational Linguistics and Bacholers in Computer Science.
+
+In the past I have worked with various startups helping build websites and products.
 
 Here are a few technologies I've been working with recently:

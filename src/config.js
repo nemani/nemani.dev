@@ -1,38 +1,34 @@
 module.exports = {
-  siteTitle: 'Brittany Chiang | Software Engineer',
+  siteTitle: 'Arjun Nemani | Software Engineer',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
+    'Arjun Nemani is a software engineer based in Hyderabad, India studying at IIIT Hyderabad with a keen interest in Building & Scaling Software, Product Management and Community Building',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
-  siteUrl: 'https://brittanychiang.com',
+    'Arjun Nemani, Arjun, Nemani, nemaniarjun, software engineer, full-stack engineer, devops, community building, product, management, javascript, rails, ruby, IIIT, Hyderabad, India',
+  siteUrl: 'https://nemani.dev',
   siteLanguage: 'en_US',
-  googleAnalyticsID: 'UA-45666519-2',
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
-  email: 'brittany.chiang@gmail.com',
-  github: 'https://github.com/bchiang7',
-  twitterHandle: '@bchiang7',
+  googleAnalyticsID: 'UA-164593019-1',
+  // googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
+  name: 'Arjun Nemani',
+  location: 'Hyderabad, India',
+  email: 'nemaniarjun@gmail.com',
+  github: 'https://github.com/nemaniarjun',
+  twitterHandle: '@theRealNemani',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/nemaniarjun',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://www.linkedin.com/in/nemaniarjun',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/nemaniarjun',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/theRealNemani',
     },
   ],
 
@@ -53,14 +49,17 @@ module.exports = {
       name: 'Contact',
       url: '/#contact',
     },
+    {
+      name: 'Blog',
+      url: '/blog',
+    },
   ],
 
   navHeight: 100,
-
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    green: '#e15729',
+    navy: '#17113d',
+    darkNavy: '#201a4b',
   },
 
   srConfig: (delay = 200) => ({

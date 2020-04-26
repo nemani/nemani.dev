@@ -5,6 +5,7 @@ import { srConfig } from '@config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '@styles';
 const { colors, fontSizes, fonts } = theme;
+import { GitHubGraph } from '@components/icons';
 
 const StyledContainer = styled(Section)`
   position: relative;
@@ -192,12 +193,16 @@ const Jobs = ({ data }) => {
       }
     }
   };
-
+  
   return (
     <StyledContainer id="jobs" ref={revealContainer}>
       <Heading>Where I&apos;ve Worked</Heading>
       <StyledTabs>
-        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyPressed(e)}>
+        <StyledTabList
+          role="tablist"
+          aria-label="Job tabs"
+          onKeyDown={e => onKeyPressed(e)}
+        >
           {data &&
             data.map(({ node }, i) => {
               const { company } = node.frontmatter;
@@ -211,7 +216,8 @@ const Jobs = ({ data }) => {
                     role="tab"
                     aria-selected={activeTabId === i ? true : false}
                     aria-controls={`panel-${i}`}
-                    tabIndex={activeTabId === i ? '0' : '-1'}>
+                    tabIndex={activeTabId === i ? '0' : '-1'}
+                  >
                     <span>{company}</span>
                   </StyledTabButton>
                 </li>
@@ -232,12 +238,17 @@ const Jobs = ({ data }) => {
                 role="tabpanel"
                 aria-labelledby={`tab-${i}`}
                 tabIndex={activeTabId === i ? '0' : '-1'}
-                hidden={activeTabId !== i}>
+                hidden={activeTabId !== i}
+              >
                 <StyledJobTitle>
                   <span>{title}</span>
                   <StyledCompany>
                     <span>&nbsp;@&nbsp;</span>
-                    <a href={url} target="_blank" rel="nofollow noopener noreferrer">
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
                       {company}
                     </a>
                   </StyledCompany>
@@ -250,6 +261,7 @@ const Jobs = ({ data }) => {
             );
           })}
       </StyledTabs>
+      <GitHubGraph></GitHubGraph>
     </StyledContainer>
   );
 };

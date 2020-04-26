@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Helmet from 'react-helmet';
-import kebabCase from 'lodash/kebabCase';
-import PropTypes from 'prop-types';
-import { Layout } from '@components';
-import styled from 'styled-components';
-import { Main, theme } from '@styles';
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Helmet from "react-helmet";
+import kebabCase from "lodash/kebabCase";
+import PropTypes from "prop-types";
+import { Layout } from "@components";
+import styled from "styled-components";
+import { Main, theme } from "@styles";
 const { colors } = theme;
 
 const StyledPostContainer = styled(Main)`
@@ -42,31 +42,35 @@ const PostTemplate = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Helmet>
-        <title>{title} | Brittany Chiang</title>
-        <link rel="canonical" href="https://brittanychiang.com/pensieve" />
+        <title>{title} | Arjun Nemani</title>
+        <link rel="canonical" href="https://nemani.dev/blog" />
       </Helmet>
 
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/pensieve">All memories</Link>
+          <Link to="/blog">All memories</Link>
         </span>
 
         <StyledPostHeader>
           <h1 className="medium-title">{title}</h1>
           <p className="subtitle">
             <time>
-              {new Date(date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
+              {new Date(date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
               })}
             </time>
             <span>&nbsp;&mdash;&nbsp;</span>
             {tags &&
               tags.length > 0 &&
               tags.map((tag, i) => (
-                <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">
+                <Link
+                  key={i}
+                  to={`/blog/tags/${kebabCase(tag)}/`}
+                  className="tag"
+                >
                   #{tag}
                 </Link>
               ))}
