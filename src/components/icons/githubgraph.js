@@ -10,7 +10,7 @@ const GitHubGraph = () => (
   <StyledContainer>
     <a href="https://github.com/nemaniarjun">
       <img
-        src="http://ghchart.rshah.org/2016rshah"
+        src="http://ghchart.rshah.org/nemaniarjun"
         alt="2016rshah's Github chart"
       />
     </a>
