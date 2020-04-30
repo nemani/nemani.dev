@@ -45,7 +45,7 @@ const StyledGitHubLink = styled.a`
   padding: 10px;
 `;
 
-const Footer = isHome => (
+const Footer = ({ isHome }) => (
   <StyledContainer>
     <StyledSocial>
       <StyledSocialList>

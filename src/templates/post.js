@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
-import { Layout } from '@components';
+import { Layout, UtterancesComments } from '@components';
 import styled from 'styled-components';
 import { Main, theme } from '@styles';
 const { colors } = theme;
@@ -78,6 +78,7 @@ const PostTemplate = ({ data, location }) => {
         </StyledPostHeader>
 
         <StyledPostContent dangerouslySetInnerHTML={{ __html: html }} />
+        <UtterancesComments />
       </StyledPostContainer>
     </Layout>
   );
