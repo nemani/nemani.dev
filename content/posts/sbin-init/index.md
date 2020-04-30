@@ -15,9 +15,13 @@ I have been thinking about writing about my technical exploits for a long time.
 
 The thought started out as a desire to emulate my role models, but it has grown a lot.
 
-<center>
-<iframe src="https://giphy.com/embed/3oEjHWbXcpeKhTktXi" width="480" height="440" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-</center>
+<div style="position:relative;height:0;overflow:hidden;max-width:100%;padding-bottom:56.25%;">
+  <iframe src="https://giphy.com/embed/3oEjHWbXcpeKhTktXi"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
 
 I now think that having a technical blog is essential for a person like me — someone who eats, breaths and sleeps tech.
 

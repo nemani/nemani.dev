@@ -45,39 +45,42 @@ const StyledGitHubLink = styled.a`
   padding: 10px;
 `;
 
-const Footer = () => (
+const Footer = isHome => (
   <StyledContainer>
     <StyledSocial>
       <StyledSocialList>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <StyledSocialLink
-                  href={url}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  aria-label={name}
-                >
-                  <FormattedIcon name={name} />
-                </StyledSocialLink>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <StyledSocialLink
+                href={url}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label={name}
+              >
+                <FormattedIcon name={name} />
+              </StyledSocialLink>
+            </li>
+          ))}
       </StyledSocialList>
     </StyledSocial>
-    <StyledMetadata tabindex="-1">
-      <StyledGitHubLink
-        href="https://brittanychiang.com/"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-      >
-        <div>Designed by Brittany Chiang</div>
-      </StyledGitHubLink>
-    </StyledMetadata>
+    {isHome && (
+      <StyledMetadata tabindex="-1">
+        <StyledGitHubLink
+          href="https://brittanychiang.com/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <div>Designed by Brittany Chiang</div>
+        </StyledGitHubLink>
+      </StyledMetadata>
+    )}
   </StyledContainer>
 );
 
 Footer.propTypes = {
   githubInfo: PropTypes.object,
+  isHome: PropTypes.bool,
 };
 
 export default Footer;

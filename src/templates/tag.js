@@ -1,10 +1,10 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import kebabCase from "lodash/kebabCase";
-import PropTypes from "prop-types";
-import { Layout } from "@components";
-import styled from "styled-components";
-import { theme, mixins, Main } from "@styles";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
+import PropTypes from 'prop-types';
+import { Layout } from '@components';
+import styled from 'styled-components';
+import { theme, mixins, Main } from '@styles';
 const { colors, fontSizes } = theme;
 
 const StyledTagsContainer = styled(Main)`
@@ -55,7 +55,7 @@ const TagTemplate = ({ pageContext, data, location }) => {
       <StyledTagsContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/blog">All memories</Link>
+          <Link to="/blog">All posts</Link>
         </span>
 
         <h1>
@@ -75,10 +75,10 @@ const TagTemplate = ({ pageContext, data, location }) => {
                 </h2>
                 <p className="subtitle">
                   <time>
-                    {new Date(date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
+                    {new Date(date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
                     })}
                   </time>
                   <span>&nbsp;&mdash;&nbsp;</span>
@@ -119,7 +119,7 @@ TagTemplate.propTypes = {
               title: PropTypes.string.isRequired,
             }),
           }),
-        }).isRequired
+        }).isRequired,
       ),
     }),
   }),

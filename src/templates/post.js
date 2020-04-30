@@ -1,11 +1,11 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import Helmet from "react-helmet";
-import kebabCase from "lodash/kebabCase";
-import PropTypes from "prop-types";
-import { Layout } from "@components";
-import styled from "styled-components";
-import { Main, theme } from "@styles";
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Helmet from 'react-helmet';
+import kebabCase from 'lodash/kebabCase';
+import PropTypes from 'prop-types';
+import { Layout } from '@components';
+import styled from 'styled-components';
+import { Main, theme } from '@styles';
 const { colors } = theme;
 
 const StyledPostContainer = styled(Main)`
@@ -49,17 +49,17 @@ const PostTemplate = ({ data, location }) => {
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/blog">All memories</Link>
+          <Link to="/blog">All posts</Link>
         </span>
 
         <StyledPostHeader>
           <h1 className="medium-title">{title}</h1>
           <p className="subtitle">
             <time>
-              {new Date(date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
+              {new Date(date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
               })}
             </time>
             <span>&nbsp;&mdash;&nbsp;</span>
