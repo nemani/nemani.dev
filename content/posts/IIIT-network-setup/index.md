@@ -24,8 +24,6 @@ We are going to cover the following things:
 
 ## Why should you use a VPN
 
-{:test}
-
 Using a VPN service allows you to hide your information from anyone trying to snoop on you.
 It also allows you to access websites and services blocked on your network. You can also use VPNs to escape Geofencing.
 

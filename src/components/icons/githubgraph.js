@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { github } from '@config';
+
+const GitHubUsername = github.split('/').pop();
 
 const StyledContainer = styled.div`
   padding: 0px;
@@ -8,10 +11,10 @@ const StyledContainer = styled.div`
 
 const GitHubGraph = () => (
   <StyledContainer>
-    <a href="https://github.com/nemaniarjun">
+    <a href={github}>
       <img
-        src="http://ghchart.rshah.org/nemaniarjun"
-        alt="2016rshah's Github chart"
+        src={`https://ghchart.rshah.org/${GitHubUsername}`}
+        alt={`${GitHubUsername}'s GitHub Contributions Chart`}
       />
     </a>
   </StyledContainer>
