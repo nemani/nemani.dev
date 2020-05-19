@@ -19,7 +19,7 @@ const Head = ({ metadata }) => (
 
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="blog" />
     <meta property="og:url" content={metadata.siteUrl} />
     <meta property="og:site_name" content={metadata.title} />
     <meta property="og:image" content={`${config.siteUrl}${ogImage}`} />

@@ -7,6 +7,7 @@ import { Layout, UtterancesComments } from '@components';
 import styled from 'styled-components';
 import { Main, theme } from '@styles';
 const { colors } = theme;
+import config from '@config';
 
 const StyledPostContainer = styled(Main)`
   max-width: 1000px;
@@ -37,13 +38,34 @@ const StyledPostContent = styled.div`
 
 const PostTemplate = ({ data, location }) => {
   const { frontmatter, html } = data.markdownRemark;
-  const { title, date, tags } = frontmatter;
+  const { title, date, tags, description } = frontmatter;
+
+  const metaTitle = `${title} | Arjun Nemani`;
+  const metaDescription = `${description} | Arjun Nemani`;
+  const metaUrl = `https://nemani.dev${location.pathname}`;
+  const metaKeywords = `${config.siteKeywords},${
+    tags && tags.length > 0 && tags.map(tag => ` ${tag}`)
+  }`;
 
   return (
     <Layout location={location}>
       <Helmet>
-        <title>{title} | Arjun Nemani</title>
-        <link rel="canonical" href="https://nemani.dev/blog" />
+        <title>{metaTitle}</title>
+
+        <link rel="canonical" href={metaUrl} />
+        <meta property="og:url" href={metaUrl} />
+        <meta name="twitter:url" href={metaUrl} />
+
+        <meta itemProp="name" content={metaTitle} />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="twitter:title" content={metaTitle} />
+
+        <meta property="og:description" content={metaDescription} />
+        <meta name="description" content={metaDescription} />
+        <meta itemProp="description" content={metaDescription} />
+        <meta name="twitter:description" content={metaDescription} />
+
+        <meta name="keywords" content={metaKeywords} />
       </Helmet>
 
       <StyledPostContainer>
