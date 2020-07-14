@@ -1,8 +1,8 @@
 ---
 date: "2018-11-01"
 title: "Tunnel Rush"
-github: "https://github.com/nemaniarjun/WebGLInfiniteTunnelGame"
-external: "https://nemaniarjun.js.org/WebGLInfiniteTunnelGame/"
+github: "https://github.com/nemani/WebGLInfiniteTunnelGame"
+external: "https://nemani.js.org/WebGLInfiniteTunnelGame/"
 tech:
   - WebGL
   - Vanila JS

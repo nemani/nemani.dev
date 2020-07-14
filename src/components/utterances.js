@@ -10,7 +10,7 @@ const UtterancesComments = () => (
       scriptElem.src = 'https://utteranc.es/client.js';
       scriptElem.async = true;
       scriptElem.crossOrigin = 'anonymous';
-      scriptElem.setAttribute('repo', 'nemaniarjun/nemani.dev');
+      scriptElem.setAttribute('repo', 'nemani/nemani.dev');
       scriptElem.setAttribute('issue-term', 'title');
       scriptElem.setAttribute('label', 'blog-comments');
       scriptElem.setAttribute('theme', 'github-dark-orange');

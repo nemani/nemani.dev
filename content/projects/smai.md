@@ -1,8 +1,8 @@
 ---
 date: "2019-12-01"
 title: "SMAI: Social Media API for IRE Major Project"
-github: "https://github.com/nemaniarjun/SMAI"
-external: "https://nemaniarjun.js.org/SMAI/"
+github: "https://github.com/nemani/SMAI"
+external: "https://nemani.js.org/SMAI/"
 tech:
   - Python
   - keras

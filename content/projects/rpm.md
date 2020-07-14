@@ -1,8 +1,8 @@
 ---
 date: "2020-04-26"
 title: "Rotational Product Manager Opportunities"
-github: "https://github.com/nemaniarjun/Rotational-PM-Opportunities"
-external: "https://github.com/nemaniarjun/Rotational-PM-Opportunities"
+github: "https://github.com/nemani/Rotational-PM-Opportunities"
+external: "https://github.com/nemani/Rotational-PM-Opportunities"
 tech:
   - Jobs
   - Open Source

@@ -1,7 +1,7 @@
 ---
 date: "2020-01-01"
 title: "IOT Device Simulator"
-github: "https://github.com/nemaniarjun/IDS"
+github: "https://github.com/nemani/IDS"
 external: "http://68.183.33.250:1880/"
 tech:
   - Node-Red

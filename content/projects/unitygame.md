@@ -1,7 +1,7 @@
 ---
 date: "2019-12-01"
 title: "Monopoly"
-github: "https://github.com/nemaniarjun/SMAI"
+github: "https://github.com/nemani/MONOPOLY_GDE"
 external: ""
 tech:
   - Unity

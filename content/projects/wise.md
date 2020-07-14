@@ -1,7 +1,7 @@
 ---
 date: "2019-08-01"
 title: "WISE: WIkipedia-dump-Search-Engine"
-github: "https://github.com/nemaniarjun/wise"
+github: "https://github.com/nemani/wise"
 external: ""
 tech:
   - Natural Language Processing

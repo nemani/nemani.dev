@@ -1,7 +1,7 @@
 ---
 date: "2020-01-01"
 title: "Linux Shell"
-github: "https://github.com/nemaniarjun/LOL_Shell"
+github: "https://github.com/nemani/LOL_Shell"
 external: ""
 tech:
   - C

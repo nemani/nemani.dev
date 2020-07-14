@@ -1,7 +1,7 @@
 ---
 date: "2020-01-01"
 title: "Vyper Auction Contract"
-github: "https://github.com/nemaniarjun/Blockchain-Vyper-Auction"
+github: "https://github.com/nemani/Blockchain-Vyper-Auction"
 external: ""
 tech:
   - Vyper / Solidity

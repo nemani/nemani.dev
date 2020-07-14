@@ -2,8 +2,8 @@
 date: "1"
 title: "Tunnel Rush"
 cover: "./tunnelrush.png"
-github: "https://github.com/nemaniarjun/WebGLInfiniteTunnelGame"
-external: "https://nemaniarjun.js.org/WebGLInfiniteTunnelGame/"
+github: "https://github.com/nemani/WebGLInfiniteTunnelGame"
+external: "https://nemani.js.org/WebGLInfiniteTunnelGame/"
 tech:
   - WebGL
   - Vanila JS

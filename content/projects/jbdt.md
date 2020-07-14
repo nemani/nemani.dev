@@ -1,7 +1,7 @@
 ---
 date: "2017-11-01"
 title: "Distributional Thesaurus using JoBim Algorithm"
-github: "https://github.com/nemaniarjun/JoBim-Distributional-Thesaurus"
+github: "https://github.com/nemani/JoBim-Distributional-Thesaurus"
 external: ""
 tech:
   - Python

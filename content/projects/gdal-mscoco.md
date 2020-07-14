@@ -1,7 +1,7 @@
 ---
 date: "2019-10-01"
 title: "GDALtoMSCOCO"
-github: "https://github.com/nemaniarjun/GDALtoMSCOCO"
+github: "https://github.com/nemani/GDALtoMSCOCO"
 external: ""
 tech:
   - Python

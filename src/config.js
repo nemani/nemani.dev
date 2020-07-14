@@ -10,8 +10,8 @@ module.exports = {
   // googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'Arjun Nemani',
   location: 'Hyderabad, India',
-  email: 'nemaniarjun@gmail.com',
-  github: 'https://github.com/nemaniarjun',
+  email: 'hello@nemani.dev',
+  github: 'https://github.com/nemani',
   twitterHandle: '@theRealNemani',
   socialMedia: [
     {
