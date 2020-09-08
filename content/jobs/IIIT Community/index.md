@@ -1,9 +1,9 @@
 ---
 date: "2018-07-01"
 title: "Multiple"
-company: "Community Building"
-location: "Remote"
-range: "Aug 2016 - Present"
+company: "IIIT Community"
+location: "Hyderabad, India"
+range: "Aug 2016 - June 2020"
 url: "https://iiit.ac.in/"
 ---
 

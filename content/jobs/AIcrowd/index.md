@@ -1,9 +1,9 @@
 ---
 date: "2019-01-01"
-title: "Platform Developer"
+title: "Platform Developer & Product Manager"
 company: "AIcrowd"
 location: "Remote / Switzerland"
-range: "Jan 2019 - Present"
+range: "Jan 2019 - June 2020"
 url: "https://www.aicrowd.com/"
 ---
 
