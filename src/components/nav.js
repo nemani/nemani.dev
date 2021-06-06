@@ -23,11 +23,15 @@ const StyledContainer = styled.header`
   pointer-events: auto !important;
   user-select: auto !important;
   width: 100%;
-  height: ${props => (props.scrollDirection === 'none' ? theme.navHeight : theme.navScrollHeight)};
+  height: ${props =>
+    props.scrollDirection === 'none' ? theme.navHeight : theme.navScrollHeight};
   box-shadow: ${props =>
-    props.scrollDirection === 'up' ? `0 10px 30px -10px ${colors.shadowNavy}` : 'none'};
+    props.scrollDirection === 'up'
+      ? `0 10px 30px -10px ${colors.shadowNavy}`
+      : 'none'};
   transform: translateY(
-    ${props => (props.scrollDirection === 'down' ? `-${theme.navScrollHeight}` : '0px')}
+    ${props =>
+    props.scrollDirection === 'down' ? `-${theme.navScrollHeight}` : '0px'}
   );
   ${media.desktop`padding: 0 40px;`};
   ${media.tablet`padding: 0 25px;`};
@@ -97,11 +101,12 @@ const StyledHamburgerInner = styled.div`
   transition-delay: ${props => (props.menuOpen ? `0.12s` : `0s`)};
   transform: rotate(${props => (props.menuOpen ? `225deg` : `0deg`)});
   transition-timing-function: cubic-bezier(
-    ${props => (props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`)}
+    ${props =>
+    props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`}
   );
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: block;
     background-color: ${colors.green};
     position: absolute;
@@ -118,13 +123,15 @@ const StyledHamburgerInner = styled.div`
     width: ${props => (props.menuOpen ? `100%` : `120%`)};
     top: ${props => (props.menuOpen ? `0` : `-10px`)};
     opacity: ${props => (props.menuOpen ? 0 : 1)};
-    transition: ${props => (props.menuOpen ? theme.hamBeforeActive : theme.hamBefore)};
+    transition: ${props =>
+    props.menuOpen ? theme.hamBeforeActive : theme.hamBefore};
   }
   &:after {
     width: ${props => (props.menuOpen ? `100%` : `80%`)};
     bottom: ${props => (props.menuOpen ? `0` : `-10px`)};
     transform: rotate(${props => (props.menuOpen ? `-90deg` : `0`)});
-    transition: ${props => (props.menuOpen ? theme.hamAfterActive : theme.hamAfter)};
+    transition: ${props =>
+    props.menuOpen ? theme.hamAfterActive : theme.hamAfter};
   }
 `;
 const StyledLink = styled.div`
@@ -144,7 +151,7 @@ const StyledListItem = styled.li`
   font-size: ${fontSizes.smish};
   counter-increment: item 1;
   &:before {
-    content: '0' counter(item) '.';
+    content: "0" counter(item) ".";
     text-align: right;
     color: ${colors.green};
     font-size: ${fontSizes.xs};
@@ -173,8 +180,12 @@ class Nav extends Component {
     setTimeout(
       () =>
         this.setState({ isMounted: true }, () => {
-          window.addEventListener('scroll', () => throttle(this.handleScroll()));
-          window.addEventListener('resize', () => throttle(this.handleResize()));
+          window.addEventListener('scroll', () =>
+            throttle(this.handleScroll()),
+          );
+          window.addEventListener('resize', () =>
+            throttle(this.handleResize()),
+          );
           window.addEventListener('keydown', e => this.handleKeydown(e));
         }),
       100,
@@ -309,29 +320,7 @@ class Nav extends Component {
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      Software Resume
-                    </StyledResumeButton>
-                  </div>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
-
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                  <div
-                    style={{
-                      transitionDelay: `${
-                        isHome ? navLinks.length * 100 : 0
-                      }ms`,
-                    }}
-                  >
-                    <StyledResumeButton
-                      href="/ProductResume.pdf"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                    >
-                      Product Resume
+                      Resume
                     </StyledResumeButton>
                   </div>
                 </CSSTransition>

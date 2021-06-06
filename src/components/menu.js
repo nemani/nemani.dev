@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import { navLinks } from "@config";
-import styled from "styled-components";
-import { theme, mixins, media } from "@styles";
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import { navLinks } from '@config';
+import styled from 'styled-components';
+import { theme, mixins, media } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled.div`
@@ -16,8 +16,8 @@ const StyledContainer = styled.div`
   z-index: 10;
   outline: 0;
   transition: ${theme.transition};
-  transform: translateX(${(props) => (props.menuOpen ? 0 : 100)}vw);
-  visibility: ${(props) => (props.menuOpen ? "visible" : "hidden")};
+  transform: translateX(${props => (props.menuOpen ? 0 : 100)}vw);
+  visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
   display: none;
   ${media.tablet`display: block;`};
 `;
@@ -81,11 +81,11 @@ const ResumeLink = styled.a`
 `;
 
 const Menu = ({ menuOpen, toggleMenu }) => {
-  const handleMenuClick = (e) => {
+  const handleMenuClick = e => {
     const target = e.target;
-    const isLink = target.hasAttribute("href");
+    const isLink = target.hasAttribute('href');
     const isNotMenu =
-      target.classList && target.classList[0].includes("StyledContainer");
+      target.classList && target.classList[0].includes('StyledContainer');
 
     if (isLink || isNotMenu) {
       toggleMenu();
@@ -115,13 +115,6 @@ const Menu = ({ menuOpen, toggleMenu }) => {
             rel="nofollow noopener noreferrer"
           >
             Software Resume
-          </ResumeLink>
-          <ResumeLink
-            href="/ProductResume.pdf"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            Product Resume
           </ResumeLink>
         </NavLinks>
       </Sidebar>
