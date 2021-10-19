@@ -1,13 +1,14 @@
 ---
 date: "2020-05-01"
-title: "Site Reliablity Engineering Intern"
+title: "Site Reliability Engineer"
 company: "Enlume"
 location: "Remote / Hyderabad"
-range: "May 2020 - Present"
+range: "May 2020 - June 2021"
 url: "https://www.enlume.com/"
 ---
 
 - Deployed various open source video conferences solutions
+- Lead the team building POC for a remote device compliance management and logging tool for clients with > 25k employees and > 50k devices
 - Experimented with various methods of deploying including AWS Fargate
 - Scaled Jitsi Video Conferencing to handle 2000+ concurrent participants across 50+ conferences
 - Load Tested application with 100+ simultaneous users
