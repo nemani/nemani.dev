@@ -143,6 +143,7 @@ module.exports = {
       options: {
         trackingIds: [
           config.googleAnalyticsID, // Google Analytics / GA
+          config.oldGoogleAnalyticsTrackingID, // Google Analytics / GA
         ],
       },
     },

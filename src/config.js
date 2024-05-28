@@ -7,6 +7,7 @@ module.exports = {
   siteUrl: 'https://nemani.dev',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'G-G1NL8CBV8Y',
+  oldGoogleAnalyticsTrackingID: 'UA-164593019-1',
   // googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'Arjun Nemani',
   location: 'Hyderabad, India',
