@@ -6,13 +6,13 @@ module.exports = {
     'Arjun Nemani, Arjun, Nemani, nemaniarjun, software engineer, full-stack engineer, devops, community building, product, management, javascript, rails, ruby, IIIT, Hyderabad, India',
   siteUrl: 'https://nemani.dev',
   siteLanguage: 'en_US',
-  googleAnalyticsID: 'UA-164593019-1',
+  googleAnalyticsID: 'G-G1NL8CBV8Y',
   // googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'Arjun Nemani',
   location: 'Hyderabad, India',
   email: 'hello@nemani.dev',
   github: 'https://github.com/nemani',
-  twitterHandle: '@theRealNemani',
+  twitterHandle: '@nemaniarjun',
   socialMedia: [
     {
       name: 'GitHub',
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/theRealNemani',
+      url: 'https://twitter.com/nemaniarjun',
     },
   ],
 
