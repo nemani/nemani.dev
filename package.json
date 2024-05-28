@@ -29,7 +29,7 @@
       "prettier --write"
     ],
     "*.js": [
-      "eslint --fix"
+      "eslint --fix --ignore-pattern 'public/*'"
     ]
   },
   "dependencies": {

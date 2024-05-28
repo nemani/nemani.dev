@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tag-js","path":"/blog/tags/talk/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"/sbin/init: Why this blog?","description":"Hello World.","date":"2020-04-26","slug":"/blog/sbin-init","tags":["Talk","Misc"]}}}]}},"pageContext":{"tag":"Talk"}},"staticQueryHashes":["3115057458"]}
